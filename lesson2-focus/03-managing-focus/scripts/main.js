@@ -21,6 +21,17 @@ page('/:slug', function(context) {
 
 });
 
+
+  if (isFirstPage) {
+    isFirstPage = false;
+    return;
+  }
+
+
+ newPage.querySelector('h2').focus();
+
+
+
 page({
   hashbang: true
 });
